@@ -11,7 +11,7 @@ defmodule Exmoji do
   this library may be your new best friend.
   """
 
-  Application.ensure_loaded(:jason)
+  :ok = Application.ensure_loaded(:jason)
 
   alias Exmoji.EmojiChar
   alias Jason
